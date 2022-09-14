@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Tables</title>
+    </head>
+    <body>
+        <table border="1" cellspacing="2" cellpadding="2">
+            <!--Caption/ title for the table-->
+            <caption>Shopping bill</caption>
+            <!--Total 4 columns are splitted into 3 and 1-->
+            <tr>
+                <th colspan="4" style="border: 1px solid red;">Invoice #123456789 </th>
+                <th colspan="4"style="border: 1px solid red;">18 January 2022</th>
+            </tr>
+            <!--Row 2, all columns are merged-->
+            <tr>
+                <td colspan="3"style="border: 2px solid blue;"><b>Pay to:</b><br>Acme billing Co.<br>
+            123 Main St.<br>
+            Cityville,NA 12345</td>
+            <td colspan="4"style="border: 2px solid blue;"><b>Customer:</b><br>John Smith<br>
+                321 Willow Way<br>
+                Southeast Northwestershire, MA 54321</td>
+            </tr>
+            <tr>
+                <th colspan="2"style="border: 2px solid yellow;">Name/Description</th>
+                <th style="border: 2px solid yellow;">Qty.</th>
+                <th style="border: 2px solid yellow;">@</th>
+                <th colspan="4" style="border: 2px solid yellow;">Cost</th>
+            </tr>
+            <tr>
+                <td colspan="2"style="border: 2px solid green;">Paperclips</td>
+                <td style="border: 2px solid green;">1000</td>
+                <td style="border: 2px solid green;">0.01</td>
+                <td colspan="4" style="border: 2px solid green;">10.00</td>  
+            </tr>
+            
+            <tr>
+                <td colspan="2" style="border: 2px solid purple;">Staples (box)</td>
+                <td style="border: 2px solid purple;">100</td>
+                <td style="border: 2px solid purple;">1.00</td>
+                <td colspan="4" style="border: 2px solid purple;">100.00</td>  
+            </tr>
+            <tr>
+                <th colspan="4" style="border: 2px solid orange;">Subtotal</th>
+                <td colspan="4" style="border: 2px solid orange;">110.00</td>
+            </tr>
+            <tr>
+                <th colspan="3" style="border: 2px solid ;">Tax</th>
+                <td style="border: 2px solid ;">8%</td>
+                <td colspan="4" style="border: 2px solid ">8.80</td>
+            </tr>
+            <tr>
+                <th colspan="4"style="border: 2px solid cyan;">Grand Total</th>
+                <td colspan="4"style="border: 2px solid cyan;">Rs.118.80</td>
+            </tr>
+        </table>
+    </body>
+</html>
